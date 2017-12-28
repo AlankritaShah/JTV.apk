@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/search_item"
+        android:icon="@mipmap/ic_search_black_36dp"
+        android:title="Search"
+        app:showAsAction="always"
+        android:orderInCategory="0"/>
+
+    <item
+        android:id="@+id/menudropdown"
+        android:title="My Profile"
+        android:icon="@mipmap/ic_arrow_drop_down_black_36dp"
+        app:showAsAction="ifRoom|withText" >
+        <menu>
+            <item
+                android:id="@+id/account"
+                android:title="Your account" />
+            <item
+                android:id="@+id/editprof"
+                android:title="Edit"/>
+            <item
+                android:id="@+id/logout"
+                android:title="Log out" />
+
+        </menu>
+    </item>
+
+</menu>
+
+
+

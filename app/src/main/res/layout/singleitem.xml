@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SingleItemView">
+
+    <com.google.android.youtube.player.YouTubePlayerView
+        android:id="@+id/youtube_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:layout_gravity="center"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--<LinearLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="vertical">-->
+            <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+                android:id="@+id/buttoncollection">
+
+        <ImageButton android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/pause_play_button"
+            android:layout_marginTop="5dp"
+            android:background="@mipmap/ic_fast_rewind_black_48dp"
+            android:layout_alignParentBottom="true"/>
+
+
+        <ImageButton
+            android:id="@+id/pause_play_button"
+            android:text="pause/play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:background="#FFFFFFFF"/>
+
+
+        <ImageButton
+            android:id="@+id/seek_to_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/pause_play_button"
+            android:layout_marginTop="5dp"
+            android:background="@mipmap/ic_fast_forward_black_48dp"/>
+
+
+            </RelativeLayout>
+
+        <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_below="@id/buttoncollection">-->
+            <!--<android.support.v7.widget.RecyclerView-->
+                <!--android:id="@+id/videolist"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:paddingTop="10dp"-->
+                <!--android:layout_weight="1"/>-->
+        <!--</LinearLayout>-->
+
+
+    <!--</LinearLayout>-->
+
+    </ScrollView>
+        </LinearLayout>

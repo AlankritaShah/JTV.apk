@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/orange">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="10dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:paddingBottom="450dp">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@mipmap/ic_arrow_back_black_36dp"
+            android:text="back"
+            android:id="@+id/back" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="280dp"
+            android:background="@mipmap/ic_mode_edit_black_36dp"
+            android:text="Edit"
+            android:id="@+id/edit_profile" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/profimage"
+            android:layout_marginTop="40dp"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop = "50dp"
+            android:layout_alignParentLeft = "true"
+            android:layout_alignParentStart = "true"
+            android:layout_alignParentRight = "true"
+            android:layout_alignParentEnd = "true"
+            android:layout_below="@+id/profimage"
+            android:background="@drawable/textinput" />
+
+        <EditText
+            android:layout_width = "match_parent"
+            android:layout_height = "match_parent"
+            android:id = "@+id/edit_fname"
+            android:layout_below="@id/email"
+            android:layout_marginTop = "20dp"
+            android:layout_alignParentLeft = "true"
+            android:layout_alignParentStart = "true"
+            android:layout_alignParentRight = "true"
+            android:layout_alignParentEnd = "true"
+            android:background="@drawable/textinput" />
+
+
+        <!--<TextView-->
+            <!--android:layout_width = "match_parent"-->
+            <!--android:layout_height = "match_parent"-->
+            <!--android:id = "@+id/lname"-->
+            <!--android:layout_below="@id/fname"-->
+            <!--android:layout_marginTop = "50dp"-->
+            <!--android:layout_alignParentLeft = "true"-->
+            <!--android:layout_alignParentStart = "true"-->
+            <!--android:layout_alignParentRight = "true"-->
+            <!--android:layout_alignParentEnd = "true"-->
+            <!--android:background="@drawable/textinput" />-->
+
+        <EditText
+            android:layout_width = "match_parent"
+            android:layout_height = "match_parent"
+            android:id = "@+id/edit_lname"
+            android:layout_below="@id/edit_fname"
+            android:layout_marginTop = "20dp"
+            android:layout_alignParentLeft = "true"
+            android:layout_alignParentStart = "true"
+            android:layout_alignParentRight = "true"
+            android:layout_alignParentEnd = "true"
+            android:background="@drawable/textinput" />
+
+
+        <!--<Button-->
+            <!--android:id="@+id/buttondob"-->
+            <!--android:layout_width="70dp"-->
+            <!--android:layout_height="35dp"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:layout_alignRight="@+id/dob"-->
+            <!--android:layout_marginTop="500dp"-->
+            <!--android:onClick="Select Date"-->
+            <!--android:layout_below="@+id/edit_lname"-->
+            <!--android:text="DOB" />-->
+
+
+        <TextView
+            android:id="@+id/dob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/textinput"
+            android:layout_below="@+id/edit_lname"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+        <android.support.v7.widget.AppCompatButton
+
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:width="540dp"
+            android:layout_marginTop="50dp"
+            android:text="Save changes"
+            android:id="@+id/savechangesbutton"
+            android:layout_below="@+id/dob" />
+
+
+    </RelativeLayout>
+</ScrollView>
